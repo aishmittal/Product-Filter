@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Filter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" type="text/css" href="css/options.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="home-block">
+		<div class="w3-container w3-teal">
+			<h1> Filter Your Favourite Products </h1>
+		</div>	
+		<div class="home-body">	
+				<div class="filter-display">
+				<h2> Filters Selected </h2>
+				<div class="filters-table">
+					<ul class="list-group" id="filters-selected">
+						<li class='list-group-item'> No Filters Selected </li>
+					</ul>
+				</div>
+				</div>
+				<div class="home-bottom-button">
+					<button class="w3-btn w3-white w3-border w3-border-green w3-large w3-round-xlarge" 
+					id="filter-button"> Filter Products 
+					</button>
+			</div>
+		</div>
+	</div>	
+<div class="filter-display">
+<ul id="filters-selected">
+	</ul>
+</div>	
+<div class="filter-block">		
+<div class="container header">
+	<h2>Product Filter <div id="close-button">&#10006;</div><h2>
+			
+</div>
+<div class="w3-container w3-light-grey footer">
+	<button class="btn bottom-button w3-light-grey" id="reset">RESET </button>
+	<button class="btn bottom-button w3-light-grey" id="apply"> APPLY</button>
+</div>	
+<div class="nav-side-menu">
+    <!-- <div class="brand" style="text-align:left;">Filter</div> -->
+   	<div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li class="active">
+                  <a href="#">
+					Property 1			                  
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+					Property 2			                  
+                  </a>
+                </li>
+				<li>
+                  <a href="#">
+					Property 3			                  
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">
+					Property 4			                  
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">
+					Property 5			                  
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">
+					Property 6			                  
+                  </a>
+                </li><li>
+                  <a href="#">
+					Property 7			                  
+                  </a>
+                </li><li>
+                  <a href="#">
+					Property 8			                  
+                  </a>
+                </li><li>
+                  <a href="#">
+					Property 9			                  
+                  </a>
+                </li><li>
+                  <a href="#">
+					Property 10			                  
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>
+<div class="side_menu_options">
+	<div id="prop1" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 1 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 4) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 5) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 6) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 7) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 8) </label>
+			</li><li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 9) </label>
+			</li><li class="list-group-item">
+				<input type="checkbox"> <label>Property 1 (Option 10) </label>
+			</li>	
+		</ul>	
+	</div>
+	<div id="prop2" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 2 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 2 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 2 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 2 (Option 4) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 2 (Option 5) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 2 (Option 6) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 2 (Option 7) </label>
+			</li>
+		</ul>	
+	</div>
+	<div id="prop3" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 3 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 3 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 3 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 3 (Option 4) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 3 (Option 5) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 3 (Option 6) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 3 (Option 7) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 3 (Option 8) </label>
+			</li>
+		</ul>	
+	</div>
+	<div id="prop4" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 4 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 4 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 4 (Option 3) </label>
+			</li>	
+		</ul>	
+	</div>
+	<div id="prop5" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 5 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 5 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 5 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 5 (Option 4) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 5 (Option 5) </label>
+			</li>
+		</ul>	
+	</div>
+	<div id="prop6" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 6 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 6 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 6 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 6 (Option 4) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 6 (Option 5) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 6 (Option 6) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 6 (Option 7) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 6 (Option 8) </label>
+			</li>
+		</ul>	
+	</div>
+	<div id="prop7" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 7 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 7 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 7 (Option 3) </label>
+			</li>	
+		</ul>	
+	</div>
+	<div id="prop8" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 8 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 8 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 8 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 8 (Option 4) </label>
+			</li>
+		</ul>	
+	</div>
+	<div id="prop9" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 9 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 4) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 5) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 6) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 7) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 8) </label>
+			</li><li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 9) </label>
+			</li><li class="list-group-item">
+				<input type="checkbox"> <label>Property 9 (Option 10) </label>
+			</li>	
+		</ul>	
+	</div>
+	<div id="prop10" class="option_block">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<input type="checkbox"/> <label>Property 10 (Option 1) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 10 (Option 2) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 10 (Option 3) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 10 (Option 4) </label>
+			</li>
+			<li class="list-group-item">
+				<input type="checkbox"> <label>Property 10 (Option 5) </label>
+			</li>
+		</ul>	
+	</div>
+</div>	
+</div></div>
+</body>
+</hml>
