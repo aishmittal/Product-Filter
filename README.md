@@ -3,5 +3,8 @@
 according to the properties and items corresponding to that properties. List of selected items is displayed on homepage which can be used according 
 to requirements
 
-# Clone the project
+## Demo
+[Product Filter](https://aishmittal.github.io/Product-Filter)
+
+## Clone the project
 `git clone 	https://github.com/aishmittal/Product-Filter.git`
